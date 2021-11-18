@@ -70,12 +70,12 @@
         app:layout_constraintVertical_bias="0.328" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/editNumeroPessoas"
         android:layout_width="245dp"
         android:layout_height="56dp"
         android:backgroundTint="#fff"
         android:ems="10"
-        android:hint="2"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:textColor="#FFF"
         android:textColorHighlight="#FFF"
@@ -85,18 +85,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.318"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintTop_toBottomOf="@+id/editValor"
         app:layout_constraintVertical_bias="0.112"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal2"
+        android:id="@+id/editValor"
         android:layout_width="245dp"
         android:layout_height="56dp"
         android:layout_marginBottom="412dp"
         android:backgroundTint="#fff"
         android:ems="10"
-        android:hint="0,00"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textColor="#FFF"
         android:textColorHighlight="#FFF"
@@ -114,6 +114,7 @@
         android:id="@+id/imageView"
         android:layout_width="54dp"
         android:layout_height="71dp"
+        android:contentDescription="@string/share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
@@ -123,18 +124,18 @@
         app:srcCompat="@drawable/multiple_users_silhouette" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="R$ 0,00"
+        android:text="@string/r_0_00"
         android:textColor="#fff"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/editNumeroPessoas"
         app:layout_constraintVertical_bias="0.168" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -143,15 +144,17 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#9E5ECE"
         android:clickable="true"
+        android:contentDescription="@string/share"
+        android:focusable="true"
         android:tint="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/floatingActionButton2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/resultado"
         app:maxImageSize="32dp"
         app:srcCompat="?attr/actionModeShareDrawable"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -159,14 +162,15 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#9E5ECE"
         android:clickable="true"
+        android:contentDescription="@string/sound"
+        android:focusable="true"
         android:tint="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/resultado"
         app:maxImageSize="32dp"
         app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
-        tools:ignore="SpeakableTextPresentCheck" />
-
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
