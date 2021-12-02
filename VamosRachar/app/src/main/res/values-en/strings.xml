@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vamos Rachar</string>
+    <string name="vamos_rachar"> Lets Share!</string>
+    <string name="_0">0</string>
+    <string name="_2">2</string>
+    <string name="r_0_00">R$ 0.00</string>
+    <string name="valor_a_ser_dividido_ao_lado">Amount to be divided alongside</string>
+    <string name="quantidade_de_pessoas_para_divis_o_ao_lado">Number of people to share alongside</string>
+    <string name="compartilhar_resultado_da_divis_o">Share division result</string>
+    <string name="ouvir_resultado_da_divis_o">Hear division result</string>
+</resources>

@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="280dp"
-        android:layout_height="111dp"
+        android:layout_width="283dp"
+        android:layout_height="153dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/vamos_rachar"
         android:textAlignment="center"
@@ -19,28 +19,30 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintVertical_bias="0.298" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="71dp"
         android:layout_height="72dp"
         android:contentDescription="@string/valor_a_ser_dividido_ao_lado"
+        android:labelFor="@id/textView2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227"
         app:srcCompat="@drawable/money_icon" />
 
     <EditText
         android:id="@+id/editValor"
         android:layout_width="237dp"
         android:layout_height="61dp"
+        android:layout_marginStart="24dp"
         android:backgroundTint="#fff"
         android:ems="10"
         android:hint="@string/valor_total"
@@ -51,23 +53,24 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.069"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="71dp"
         android:layout_height="72dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/quantidade_de_pessoas_para_divis_o_ao_lado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.278"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/group_icon" />
 
     <EditText
@@ -84,10 +87,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.297"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/editValor"
+        app:layout_constraintVertical_bias="0.099"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
@@ -101,9 +104,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNumeroPessoas"
-        app:layout_constraintVertical_bias="0.163" />
+        app:layout_constraintVertical_bias="0.318" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -112,20 +116,20 @@
         android:backgroundTint="#5E2883"
         android:clickable="true"
         android:contentDescription="@string/compartilhar_resultado_da_divis_o"
+        android:focusable="true"
         app:backgroundTint="#000000"
         app:fabCustomSize="72dp"
         app:fabSize="auto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultado"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.311"
         app:maxImageSize="48dp"
         app:srcCompat="@android:drawable/ic_menu_share"
         app:tint="#fff"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:focusable="true" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -134,19 +138,19 @@
         android:backgroundTint="#5E2883"
         android:clickable="true"
         android:contentDescription="@string/ouvir_resultado_da_divis_o"
+        android:focusable="true"
         app:backgroundTint="#000000"
         app:fabCustomSize="72dp"
         app:fabSize="auto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintHorizontal_bias="0.332"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultado"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.311"
         app:maxImageSize="48dp"
         app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
         app:tint="@color/white"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:focusable="true" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

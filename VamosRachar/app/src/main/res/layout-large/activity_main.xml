@@ -9,38 +9,37 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="280dp"
-        android:layout_height="111dp"
+        android:layout_width="348dp"
+        android:layout_height="236dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/vamos_rachar"
         android:textAlignment="center"
         android:textColor="#FFF"
-        android:textSize="48sp"
+        android:textSize="96sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.601"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintVertical_bias="0.112" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="71dp"
-        android:layout_height="72dp"
+        android:layout_width="113dp"
+        android:layout_height="112dp"
         android:contentDescription="@string/valor_a_ser_dividido_ao_lado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.044"
+        app:layout_constraintVertical_bias="0.073"
         app:srcCompat="@drawable/money_icon" />
 
     <EditText
         android:id="@+id/editValor"
-        android:layout_width="237dp"
-        android:layout_height="61dp"
+        android:layout_width="425dp"
+        android:layout_height="121dp"
         android:backgroundTint="#fff"
         android:ems="10"
         android:hint="@string/valor_total"
@@ -48,32 +47,32 @@
         android:inputType="numberDecimal"
         android:text="@string/_0"
         android:textColor="#FFF"
-        android:textSize="34sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.208"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.069"
+        app:layout_constraintVertical_bias="0.074"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="71dp"
-        android:layout_height="72dp"
+        android:layout_width="118dp"
+        android:layout_height="135dp"
         android:contentDescription="@string/quantidade_de_pessoas_para_divis_o_ao_lado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.278"
+        app:layout_constraintVertical_bias="0.277"
         app:srcCompat="@drawable/group_icon" />
 
     <EditText
         android:id="@+id/editNumeroPessoas"
-        android:layout_width="237dp"
-        android:layout_height="61dp"
+        android:layout_width="421dp"
+        android:layout_height="107dp"
         android:backgroundTint="#fff"
         android:ems="10"
         android:hint="@string/numero_de_pessoas"
@@ -81,13 +80,13 @@
         android:inputType="numberDecimal"
         android:text="@string/_2"
         android:textColor="#FFF"
-        android:textSize="34sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.228"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.297"
+        app:layout_constraintVertical_bias="0.285"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
@@ -97,13 +96,14 @@
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/r_0_00"
         android:textColor="#FFF"
-        android:textSize="60sp"
+        android:textSize="96sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNumeroPessoas"
-        app:layout_constraintVertical_bias="0.163" />
+        app:layout_constraintVertical_bias="0.199" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -112,20 +112,20 @@
         android:backgroundTint="#5E2883"
         android:clickable="true"
         android:contentDescription="@string/compartilhar_resultado_da_divis_o"
+        android:focusable="true"
         app:backgroundTint="#000000"
-        app:fabCustomSize="72dp"
+        app:fabCustomSize="180dp"
         app:fabSize="auto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultado"
-        app:layout_constraintVertical_bias="0.4"
-        app:maxImageSize="48dp"
+        app:layout_constraintVertical_bias="0.398"
+        app:maxImageSize="100dp"
         app:srcCompat="@android:drawable/ic_menu_share"
         app:tint="#fff"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:focusable="true" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -134,8 +134,9 @@
         android:backgroundTint="#5E2883"
         android:clickable="true"
         android:contentDescription="@string/ouvir_resultado_da_divis_o"
+        android:focusable="true"
         app:backgroundTint="#000000"
-        app:fabCustomSize="72dp"
+        app:fabCustomSize="180dp"
         app:fabSize="auto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -143,10 +144,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultado"
         app:layout_constraintVertical_bias="0.4"
-        app:maxImageSize="48dp"
+        app:maxImageSize="100dp"
         app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
         app:tint="@color/white"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:focusable="true" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

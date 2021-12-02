@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Vamos Rachar</string>
     <string name="vamos_rachar">Vamos Rachar!</string>
@@ -8,6 +9,4 @@
     <string name="quantidade_de_pessoas_para_divis_o_ao_lado">Quantidade de pessoas para divisão ao lado</string>
     <string name="compartilhar_resultado_da_divis_o">Compartilhar resultado da divisão</string>
     <string name="ouvir_resultado_da_divis_o">Ouvir resultado da divisão</string>
-    <string name="valor_total">valor total</string>
-    <string name="numero_de_pessoas">numero de pessoas</string>
 </resources>
